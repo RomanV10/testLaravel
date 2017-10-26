@@ -15,7 +15,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4" : {
-            "TestLaravel\\Items\\": "vendor/roman/testLaravel/items/src"
+            "TestLaravel\\Items\\": "src/"
         }
     }
 }
