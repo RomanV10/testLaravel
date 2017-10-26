@@ -12,5 +12,11 @@
             "email": "roman.viktorovich10@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "autoload-dev": {
+        "psr-4" : {
+            "TestLaravel\\Items\\": "vendor/roman/testLaravel/items/src"
+        }
+    }
 }
+
