@@ -8,6 +8,7 @@ To "aliases" in "/config/app.php" add
     'Form' => Collective\Html\FormFacade::class,
     'Html' => Collective\Html\HtmlFacade::class,
 
-run php artisan vendor:publish
-run php artisan migrate
+run "compoer dumpautoload"
+run "php artisan vendor:publish"
+run "php artisan migrate"
 
