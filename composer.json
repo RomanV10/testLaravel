@@ -1,5 +1,5 @@
 {
-    "name": "roman/testLaravel",
+    "name": "roman/testLaravel/items",
     "description": "Test item",
     "type": "laravel",
     "require": {
