@@ -1,0 +1,16 @@
+{
+    "name": "roman/testLaravel",
+    "description": "Test item",
+    "type": "laravel",
+    "require": {
+        "laravelcollective/html": "^5.2.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "roman",
+            "email": "roman.viktorovich10@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
