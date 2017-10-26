@@ -1,0 +1,9 @@
+To "providers" in /config/app.php add
+    Collective\Html\HtmlServiceProvider::class,
+    Test\Items\ItemsServiceProvide::class,
+
+To "aliases" in "/config/app.php" add
+    'Form' => Collective\Html\FormFacade::class,
+    'Html' => Collective\Html\HtmlFacade::class,
+
+To composer.json in "autoload:psr-4" add "Test\\Items\\": "packages/test/items/src"
