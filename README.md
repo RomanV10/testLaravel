@@ -26,7 +26,7 @@
 ```
 
 **Run**
-```php
+```bash
 composer require "roman/testLaravel @dev"
  ```
 **To "providers" in /config/app.php add**
@@ -41,7 +41,7 @@ TestLaravel\Items\ItemsServiceProvider::class,
 'Html' => Collective\Html\HtmlFacade::class,
 ```
 **Then run**
-```php
+```bash
 composer dumpautoload
 php artisan vendor:publish
 php artisan migrate
