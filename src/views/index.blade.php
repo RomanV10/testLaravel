@@ -26,8 +26,9 @@
                                 <img width="100%" src="{{ $item->image_path }}">
                             </div>
                         </div>
+                        @if ($item->rate > 0)
                         <div class="vote-line" style="width: {{$item->rate}}%;"></div>
-
+                        @endif
                     </a>
                 </div>
             @endforeach

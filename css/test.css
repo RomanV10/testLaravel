@@ -62,7 +62,7 @@ a .grey-font, .grey-font {
 .block-item {
     text-align: left;
     display: block;
-
+    overflow: hidden;
     background-color: white;
     border: 1px solid #ECEDEE;
     margin-bottom: 20px;
