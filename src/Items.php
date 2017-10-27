@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use TestLaravel\Items\ItemsController;
 class Items extends Model {
 
-  protected $fillable = ['title', 'slug', 'image_path'];
+  protected $fillable = ['title', 'second_title', 'slug', 'image_path'];
 
   /**
    * @param $slug

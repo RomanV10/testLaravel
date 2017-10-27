@@ -9,6 +9,8 @@
     <title>Agency - Start Bootstrap Theme</title>
     <!-- Bootstrap Core CSS -->
     <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/test.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -30,6 +32,8 @@
 
 <section id="services">
     <div class="container">
+        <div class="items-wrap">
+
         @if(count($errors) > 0)
             <div class="alert alert-danger">
                 @foreach($errors->all() as $error)
@@ -38,7 +42,7 @@
             </div>
         @endif
         @yield('content')
-        <div class="row">
+        <div class="row api-example">
             <h2>API example</h2>
             <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
@@ -56,7 +60,8 @@ URL:/api/v1/item/add
                               </code>
                               <code>
 {
-"title": 21,
+"title": Test title,
+"second_title": Test second title,
 "image_path": "http://via.placeholder.com/350x150"
 }
                               </code>
@@ -67,6 +72,7 @@ URL:/api/v1/item/add
                               <code>
 {
 "title": "23132131",
+"second_title": Test second title,
 "image_path": "323323213",
 "slug": "23132131-6",
 "updated_at": "2017-10-26 06:27:35",
@@ -101,6 +107,7 @@ PARAM: id=int
 {
 "id": 33,
 "title": "23132131",
+"second_title": Test second title,
 "slug": "23132131-6",
 "image_path": "323323213",
 "created_at": "2017-10-26 06:27:35",
@@ -133,6 +140,7 @@ URL: /api/v1/item/show/{slug}
 {
 "id": 33,
 "title": "23132131",
+"second_title": Test second title,
 "slug": "23132131-6",
 "image_path": "323323213",
 "created_at": "2017-10-26 06:27:35",
@@ -168,6 +176,7 @@ PARAM: random:1
   {
 "id": 21,
 "title": "tet",
+"second_title": Test second title,
 "slug": "tset",
 "image_path": "/images/1508912425.png",
 "created_at": "2017-10-25 06:20:25",
@@ -177,6 +186,7 @@ PARAM: random:1
   {
 "id": 23,
 "title": "test1",
+"second_title": Test second title,
 "slug": "test1",
 "image_path": "/images/1508913816.png",
 "created_at": "2017-10-25 06:43:36",
@@ -217,6 +227,7 @@ other_ids:[23,24]
   {
 "id": 21,
 "title": "tet",
+"second_title": Test second title,
 "slug": "tset",
 "image_path": "/images/1508912425.png",
 "created_at": "2017-10-25 06:20:25",
@@ -226,6 +237,7 @@ other_ids:[23,24]
   {
 "id": 23,
 "title": "test1",
+"second_title": Test second title,
 "slug": "test1",
 "image_path": "/images/1508913816.png",
 "created_at": "2017-10-25 06:43:36",
@@ -265,6 +277,7 @@ rating:1
 {
 "id": 23,
 "title": "test1",
+"second_title": Test second title,
 "slug": "test1",
 "image_path": "/images/1508913816.png",
 "created_at": "2017-10-25 06:43:36",
@@ -277,6 +290,7 @@ rating:1
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </section>

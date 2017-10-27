@@ -67,6 +67,7 @@ class ItemsController extends AbstractItemController {
       $items = new Items();
 
       $data['title'] = $request->input('title');
+      $data['second_title'] = $request->input('second_title');
       $data['slug'] = $this->createSlug($items, $data['title']);
 
       $items->saveItem($data);

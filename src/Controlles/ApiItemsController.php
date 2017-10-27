@@ -37,6 +37,7 @@ class ApiItemsController extends AbstractItemController {
       $items = new Items();
 
       $data['title'] = $request->input('title');
+      $data['second_title'] = $request->input('second_title');
       $data['image_path'] = $request->input('image_path');
       $data['slug'] = $this->createSlug($items, $data['title']);
 

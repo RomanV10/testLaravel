@@ -33,7 +33,6 @@ abstract class AbstractItemController extends Controller {
       $items = $item_inst->getLastPopularItems();
     }
     $items = $this->buildImageUrlForItems($items);
-
     return $items;
   }
 
@@ -80,6 +79,8 @@ abstract class AbstractItemController extends Controller {
     $items = new Items();
 
     $data['title'] = $request->input('title');
+    $data['second_title'] = $request->input('second_title');
+
     $data['slug'] = $this->createSlug($items, $data['title']);
 
     $items->saveItem($data);
