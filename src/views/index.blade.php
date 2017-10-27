@@ -10,6 +10,9 @@
             <a href="{{route('itemSlug',[$item->slug, 'items_ids' => $items_ids])}}"><img width="50%"
                                                                                           src="{{ $item->image_path }}"></a>
             <p class="span6">{{link_to_route('itemSlug', $item->title, [$item->slug, 'items_ids' => $items_ids])}}</p>
+            <p class="span6">Votes:{{$item->rate}}</p>
         </div>
+        <hr>
     @endforeach
 @endsection
+
