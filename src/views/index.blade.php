@@ -3,8 +3,10 @@
 @section('content')
         <div class="row span6 top-wrap">
             <div class="left-side">
-                <p class="font-16px grey-font">Wars</p>
-                <p class="font-24px">Highscore</p>
+                <a href="/">
+                    <p class="font-16px grey-font">Wars</p>
+                    <p class="font-24px">Highscore</p>
+                </a>
             </div>
             <div class="right-side">
                 <button>{{link_to_route('allItems', 'Play', ['random' => 1])}}</button>
