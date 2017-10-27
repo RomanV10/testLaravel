@@ -1,5 +1,5 @@
 ```bash
-Copy from css/test.css to  "/css" "test.css"** 
+Copy file "test.css" from  css/test.css to public "/css". 
 ```
 **To "composer.json" add**
 ```json
